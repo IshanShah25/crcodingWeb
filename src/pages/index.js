@@ -2,6 +2,31 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Card from '../components/Card';
 import Section from '../components/Section';
+import Wave from '../components/Wave';
+import staticdata from '../../staticdata.json'
+import Cell from '../components/Cell';
+import styled from 'styled-components'
+
+const SectionCaption = styled.p`
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #94A4BA;
+  text-align: center;
+
+`
+const SectionCellGroup = styled.div`
+  max-width: 800px;
+  margin: 0 auto 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  padding: 0 20px;
+
+  @media (max-width: 800px){
+    grid-template-columns: repeat(1,1fr);
+  }
+`
 
 const IndexPage = () => (
   <div>
@@ -22,19 +47,7 @@ const IndexPage = () => (
         </div>
 
 
-        <svg width="100%" height="172"  fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="" fill="white">
-          <animate repeatCount="indefinite" fill="freeze" attributeName="d" dur="10s" values="M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z;
-
-          M0 87.1596C316 87.1597 444 160 884 52.0001C1324 -55.9999 1320.29 34.966 1538 71.251C1814 117.251 2156 189.252 2560 87.1597V233.161L0 233.161V87.1596Z;
-
-          M0 53.6584C158 11.0001 213 0 363 0C513 0 855.555 115.001 1154 115.001C1440 115.001 1626 -38.0004 2560 53.6585V199.66L0 199.66V53.6584Z;
-          
-          M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z
-          "
-          />
-         </path>
-        </svg>
+        <Wave />
       </div>
     </div>
     <div  className="Cards">
@@ -58,12 +71,24 @@ const IndexPage = () => (
         image={require('../images/wallpaper4.jpg')}/>
       </div>
     </div>
-    {/* <Section 
+    <Section 
       image={require('../images/wallpaper2.jpg')}
-      logo={require('../images/logo-swift.png')}
-      title="What is CR Coding"
+      logo={require('../images/crcoding-logo.png')}
+      title="Career Ready Coding"
       text="CR Coding is an organization in which students with different backgrounds are brought together under the collective goal of learning the basics of Computer Science. We are striving to find students that are unable to learn coding at their schools and/or would like to further their education in Computer Science."
-    /> */}
+    />
+
+    
+    <SectionCaption>Lesson Topics</SectionCaption>
+    <SectionCellGroup>
+      {staticdata.cells.map(cell => (
+        <Cell
+          title={cell.title}
+          image={cell.image}
+        />
+
+      ))}
+    </SectionCellGroup>
   </div>
 )
 
