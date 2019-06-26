@@ -13,7 +13,7 @@ a {
 }
 
 .Hero {
-  background-image: url('../images/wallpaper3.jpg');
+  background-image: url('../images/Wave007.png');
   height: 920px;
   background-size: cover;
   background-position: center;
@@ -128,10 +128,17 @@ a {
 .CardGroup {
   margin: 50px 40px 100px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
   justify-items: center;
 
+}
+
+
+@media (max-width: 1322px) {
+  .CardGroup {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 1060px) {
@@ -144,4 +151,63 @@ a {
   .CardGroup {
     grid-template-columns: repeat(1,1fr);
   }
+}
+
+
+/* ONLINE COURSES SECTION */
+
+.OnlineCourses {
+  background: #26547C;
+  height: 920px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.ComputerScienceGroup {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 150px 50px;
+  text-align: center;
+}
+
+.ComputerScienceGroup h2 {
+  color: white;
+}
+
+.CardGroupCourses {
+  margin: 50px 40px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  justify-items: center;
+
+}
+
+/* @media (max-width: 1322px) {
+  .CardGroupCourses {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} */
+
+@media (max-width: 1060px) {
+  .CardGroupCourses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .CardGroupCourses {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+.CardsCourses h2 {
+  margin: 50px 20px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(104deg, #050A27 0%, #41548C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

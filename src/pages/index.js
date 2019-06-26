@@ -51,7 +51,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div  className="Cards">
-      <h2>Computer Science</h2>
+      <h2>Course Showcase</h2>
       <div className="CardGroup">
         <Card 
         title="Java"
@@ -66,9 +66,25 @@ const IndexPage = () => (
         text="9 sections"
         image={require('../images/wallpaper3.jpg')}/>
         <Card 
-        title="Swift"
+        title="Pre-Algebra"
         text="9 sections"
         image={require('../images/wallpaper4.jpg')}/>
+        <Card 
+        title="Personal Finance"
+        text="9 sections"
+        image={require('../images/wallpaper3.jpg')}/>
+        <Card 
+        title="Algebra"
+        text="9 sections"
+        image={require('../images/wallpaper.jpg')}/>
+        <Card 
+        title="Algebra"
+        text="9 sections"
+        image={require('../images/wallpaper.jpg')}/>
+        <Card 
+        title="Algebra"
+        text="9 sections"
+        image={require('../images/wallpaper.jpg')}/>
       </div>
     </div>
     <Section 
