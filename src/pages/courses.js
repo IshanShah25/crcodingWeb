@@ -31,12 +31,44 @@ const SectionCellGroup = styled.div`
 const CoursesPage = () => (
   <div>
     <div className="OnlineCourses">
-      <div className="ComputerScienceGroup">
-        <h2> Computer Science </h2>
-        <div className="CardsGroupCourses">
-        
-        </div>
+      <div className="OnlineCoursesGroup">
+        <h1> Online Courses </h1>
+        <Wave />
       </div>
+
+
+      <div  className="CoursesCards">
+      <h2>Computer Science</h2>
+      <div className="CoursesCardGroup">
+        <Card 
+        title="Java"
+        text="9 sections"
+        image={require('../images/wallpaper.jpg')}/>
+        <Card 
+        title="Python"
+        text="9 sections"
+        image={require('../images/wallpaper2.jpg')}/>
+        <Card 
+        title="HTML & CSS"
+        text="9 sections"
+        image={require('../images/wallpaper3.jpg')}/>
+        <Card 
+        title="C++"
+        text="9 sections"
+        image={require('../images/wallpaper4.jpg')}/>
+        <Card 
+        title="C# with Unity"
+        text="9 sections"
+        image={require('../images/wallpaper3.jpg')}/>
+        <Card 
+        title="Swift"
+        text="9 sections"
+        image={require('../images/wallpaper.jpg')}/>
+        
+      </div>
+    </div>
+
+
     </div>
   </div>
 )
