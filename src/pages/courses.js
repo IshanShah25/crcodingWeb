@@ -29,7 +29,7 @@ const SectionCellGroup = styled.div`
 `
 
 const CoursesPage = () => (
-  <div>
+  <div className="CoursesBody">
     <div className="OnlineCourses">
       <div className="OnlineCoursesGroup">
         <h1> Online Courses </h1>
@@ -69,8 +69,57 @@ const CoursesPage = () => (
     </div>
 
 
+
+    <div  className="CoursesCards">
+      <h2>Math</h2>
+      <div className="CoursesCardGroup">
+        <Card 
+        title="Pre-Algebra"
+        text="9 sections"
+        image={require('../images/wallpaper.jpg')}/>
+        <Card 
+        title="Algebra"
+        text="9 sections"
+        image={require('../images/wallpaper2.jpg')}/>
+        <Card 
+        title="Algebra 2"
+        text="9 sections"
+        image={require('../images/wallpaper3.jpg')}/>
+        
+        
+      </div>
     </div>
+
+
+    <div  className="CoursesCards">
+      <h2>Finance</h2>
+      <div className="CoursesCardGroup">
+        <Card 
+        title="Personal Finance"
+        text="9 sections"
+        image={require('../images/wallpaper.jpg')}/>
+        <Card 
+        title="Stock Market"
+        text="9 sections"
+        image={require('../images/wallpaper.jpg')}/>
+        <Card 
+        title="Other Finance"
+        text="9 sections"
+        image={require('../images/wallpaper.jpg')}/>
+        
+        
+        
+        
+        
+      </div>
+      
+    </div>
+   
+
+    </div>
+    
   </div>
+  
 )
 
 export default CoursesPage
