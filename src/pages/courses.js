@@ -40,30 +40,42 @@ const CoursesPage = () => (
       <div  className="CoursesCards">
       <h2>Computer Science</h2>
       <div className="CoursesCardGroup">
+        <Link to="/java">
+          <Card 
+          title="Java"
+          text="9 sections"
+          image={require('../images/wallpaper.jpg')}/>
+        </Link>
+        <Link to="/">
+          <Card 
+          title="Python"
+          text="9 sections"
+          image={require('../images/wallpaper2.jpg')}/>
+        </Link>
+        <Link to="/">
         <Card 
-        title="Java"
-        text="9 sections"
-        image={require('../images/wallpaper.jpg')}/>
-        <Card 
-        title="Python"
-        text="9 sections"
-        image={require('../images/wallpaper2.jpg')}/>
-        <Card 
-        title="HTML & CSS"
-        text="9 sections"
-        image={require('../images/wallpaper3.jpg')}/>
-        <Card 
-        title="C++"
-        text="9 sections"
-        image={require('../images/wallpaper4.jpg')}/>
-        <Card 
-        title="C# with Unity"
-        text="9 sections"
-        image={require('../images/wallpaper3.jpg')}/>
-        <Card 
-        title="Swift"
-        text="9 sections"
-        image={require('../images/wallpaper.jpg')}/>
+          title="HTML & CSS"
+          text="9 sections"
+          image={require('../images/wallpaper3.jpg')}/>
+        </Link>
+        <Link to="/">
+          <Card 
+          title="C++"
+          text="9 sections"
+          image={require('../images/wallpaper4.jpg')}/>
+        </Link>
+        <Link to="/">
+          <Card 
+          title="C# with Unity"
+          text="9 sections"
+          image={require('../images/wallpaper3.jpg')}/>
+        </Link>
+        <Link to="/">
+          <Card 
+          title="Swift"
+          text="9 sections"
+          image={require('../images/wallpaper.jpg')}/>
+        </Link>
         
       </div>
     </div>
@@ -73,18 +85,24 @@ const CoursesPage = () => (
     <div  className="CoursesCards">
       <h2>Math</h2>
       <div className="CoursesCardGroup">
-        <Card 
-        title="Pre-Algebra"
-        text="9 sections"
-        image={require('../images/wallpaper.jpg')}/>
-        <Card 
-        title="Algebra"
-        text="9 sections"
-        image={require('../images/wallpaper2.jpg')}/>
-        <Card 
-        title="Algebra 2"
-        text="9 sections"
-        image={require('../images/wallpaper3.jpg')}/>
+        <Link to="/">
+          <Card 
+          title="Pre-Algebra"
+          text="9 sections"
+          image={require('../images/wallpaper.jpg')}/>
+        </Link>
+        <Link to="/">
+          <Card 
+          title="Algebra"
+          text="9 sections"
+          image={require('../images/wallpaper2.jpg')}/>
+        </Link>
+        <Link to="/">
+          <Card 
+          title="Algebra 2"
+          text="9 sections"
+          image={require('../images/wallpaper3.jpg')}/>
+        </Link>
         
         
       </div>
@@ -94,18 +112,24 @@ const CoursesPage = () => (
     <div  className="CoursesCards">
       <h2>Finance</h2>
       <div className="CoursesCardGroup">
-        <Card 
-        title="Personal Finance"
-        text="9 sections"
-        image={require('../images/wallpaper.jpg')}/>
-        <Card 
-        title="Stock Market"
-        text="9 sections"
-        image={require('../images/wallpaper.jpg')}/>
-        <Card 
-        title="Other Finance"
-        text="9 sections"
-        image={require('../images/wallpaper.jpg')}/>
+        <Link to="/">
+          <Card 
+          title="Personal Finance"
+          text="9 sections"
+          image={require('../images/wallpaper.jpg')}/>
+        </Link>
+        <Link to="/">
+          <Card 
+          title="Stock Market"
+          text="9 sections"
+          image={require('../images/wallpaper.jpg')}/>
+        </Link>
+        <Link to="/">
+          <Card 
+          title="Other Finance"
+          text="9 sections"
+          image={require('../images/wallpaper.jpg')}/>
+        </Link>
         
         
         
